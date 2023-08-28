@@ -63,6 +63,8 @@ int main() {
     // Array que queremos ordenar:
     vector<int> arrayOriginal = {7, 4, 8, 1, 2, 0, 3, 9};
 
+    int n = arrayOriginal.size(); // tamaño del vector 
+
     // Medir el tiempo de ejecución
     auto inicio = high_resolution_clock::now();
     vector<int> arrayOrdenado = mergeSort(arrayOriginal);
@@ -77,6 +79,9 @@ int main() {
     for (int num : arrayOrdenado) {
         cout << " " << num;
     }
+
+    // Mostrar el tamaño del vector: 
+    cout << "\nn: " << n ;
 
     // Calcular y mostrar el tiempo de ejecución
     auto duracion = duration_cast<microseconds>(fin - inicio);
