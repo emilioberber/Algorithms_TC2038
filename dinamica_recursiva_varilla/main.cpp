@@ -2,6 +2,7 @@
 // A01640603
 // Programación dinámica y recursiva para problema de la varilla
 
+
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -47,7 +48,7 @@ int gananciaMaximaDinamica(vector<int>& precios, int n) {
 
 int main() {
     vector<int> precios = {1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
-    int n = 10;
+    int n = 1;
 
     // Tiempo usando chrono para recurisva
     auto start = high_resolution_clock::now();
@@ -72,3 +73,4 @@ int main() {
 
     return 0;
 }
+
